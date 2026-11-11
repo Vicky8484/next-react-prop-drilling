@@ -1,4 +1,6 @@
-import Image from "next/image";
+import PropDrill1 from "@/app/components/(prop_drilling_funktion)/PropDrillFunkEksempel1";
+import PropDrill2 from "@/app/components/(prop_drilling_funktion)/PropDrillFunkEksempel2";
+import PropDrill3 from "@/app/components/(prop_drilling_funktion)/PropDrillFunkEksempel3";
 
 export default function Home() {
   return (
@@ -55,11 +57,25 @@ export default function Home() {
         </p>
         <ul className="list-disc p-4">
           <li>Props og prop drilling - Grundlæggende</li>
-          <li>Prop drilling - Funktion</li>
+          <li>
+            <b>Prop drilling - Funktion</b>
+          </li>
           <li>Prop drilling - Data</li>
         </ul>
-        <p>Vælg en anden branch for at se mere</p>
-        <div></div>
+        <p>
+          Man kan også sende funktioner ned gennem komponenter som props. I
+          PropDrillingFunktionEksempel.jsx laver vi en aler() funktion som
+          hedder sigHej. Derefter definerer vi onKlik-proppen som kommer på
+          KortContainer komponenten med funktionen. I KortContainer bliver
+          proppen sendt direkte videre til knap-komponenten, som kører
+          funktionen, når man trykker på den.
+        </p>
+
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+          <PropDrill1 />
+          <PropDrill2 />
+          <PropDrill3 />
+        </div>
       </div>
     </>
   );
