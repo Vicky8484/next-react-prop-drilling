@@ -1,4 +1,5 @@
-import Image from "next/image";
+import PropDrillingEksempel from "@/app/components/(prop_drilling)/PropDrillingEksempel";
+import PropsEksempel from "@/app/components/(props)/PropsEksempel";
 
 export default function Home() {
   return (
@@ -58,8 +59,29 @@ export default function Home() {
           <li>Prop drilling - Funktion</li>
           <li>Prop drilling - Data</li>
         </ul>
-        <p>Vælg en anden branch for at se mere</p>
-        <div></div>
+        <p>
+          I PropsEksempel.jsx kan du se et eksempel på, hvordan props
+          grundlæggende fungerer. <br /> En prop bliver defineret i en
+          forælder-komponent og brugt til at smide forskellige info og styling
+          på den samme komponent.
+        </p>
+        <div>
+          <PropsEksempel />
+        </div>
+        <p>
+          I PropDrillingEksempel.jsx kan du se et eksempel på, hvordan prop
+          drilling fungerer. <br /> En prop bliver defineret helt oppe i Page
+          (øverst i hierakiet) og sendt ned gennem flere komponenter indtil den
+          endelig bliver brugt i en komponent som var tre lag inde.
+        </p>
+        <p>
+          Dette er fx. nyttigt, hvis en bruger indtaster sit navn ét sted, og
+          deres navn så skal vises i en komponent som ligger i en komponent i en
+          anden komponent blablabla.
+        </p>
+        <div>
+          <PropDrillingEksempel />
+        </div>
       </div>
     </>
   );
