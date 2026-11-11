@@ -1,4 +1,4 @@
-import Image from "next/image";
+import OpskriftSektion from "@/app/components/(prop_drilling_data)/dataFetch";
 
 export default function Home() {
   return (
@@ -56,10 +56,25 @@ export default function Home() {
         <ul className="list-disc p-4">
           <li>Props og prop drilling - Grundlæggende</li>
           <li>Prop drilling - Funktion</li>
-          <li>Prop drilling - Data</li>
+          <li>
+            <b>Prop drilling - Data</b>
+          </li>
         </ul>
-        <p>Vælg en anden branch for at se mere</p>
-        <div></div>
+        <p>
+          I denne branch bruger jeg prop drilling til at sende et array af data
+          videre til en komponent med et prop. <br /> I dataFetch.js (en server
+          komponent) fetcher jeg data fra to API'er. Dataen bliver samlet i
+          henholdsvist 'recipeData' og 'productsData', hvorefter de bliver smidt
+          på som indhold til de tilsvarende props 'opskrifter' og 'produkter'
+          som sidder på hver deres komponent. Disse komponenter modtager disse
+          props og mapper henover objekterne i data-listerne (arrays) og laver
+          en <b className="italic">article</b> for hvert opskrift/produkt.{" "}
+          <br />
+          Easy as 123.
+        </p>
+        <div>
+          <OpskriftSektion />
+        </div>
       </div>
     </>
   );
