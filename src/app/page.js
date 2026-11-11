@@ -55,7 +55,9 @@ export default function Home() {
           drilling i tre forskellige branches:
         </p>
         <ul className="list-disc p-4">
-          <li>Props og prop drilling - Grundlæggende</li>
+          <li>
+            <b>Props og prop drilling - Grundlæggende</b>
+          </li>
           <li>Prop drilling - Funktion</li>
           <li>Prop drilling - Data</li>
         </ul>
