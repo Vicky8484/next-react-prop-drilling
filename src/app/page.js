@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="flex flex-col gap-4 font-sans dark:bg-gray-700 p-4 bg-gray-100 dark:text-gray-200 text-gray-800">
         <h1 className="text-4xl font-bold">
-          Prop Drilling Tutorial
+          Prop Drilling Tutorial{"  "}
           <span className="dark:text-gray-400 text-gray-600 text-2xl">
             af Victory Okosun
           </span>
