@@ -50,6 +50,24 @@ export default function Home() {
             overordnet komponent helt ned til en underkomponent, ved at sende
             dataene videre gennem alle de mellemliggende komponenter.
           </p>
+          <h2 className="font-bold">Opsætning?</h2>
+          <p>
+            For at bruge props og prop drilling skal man arbejde i et
+            komponentbaseret frontend-framework som fx Astro, React eller
+            Next.js
+          </p>
+          <a
+            href="https://docs.astro.build/en/install-and-setup/"
+            className="underline hover:text-orange-500"
+          >
+            Se hvordan du starter et nyt Astro projekt her
+          </a>
+          <a
+            href="https://nextjs.org/"
+            className="underline hover:text-orange-500 mb-4"
+          >
+            Se hvordan du starter et nyt Next.js projekt her
+          </a>
         </div>
         <h1 className="text-3xl font-bold">Eksempler</h1>
         <p>
