@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-4 font-sans dark:bg-gray-700 p-4 bg-gray-100 dark:text-gray-200 text-gray-800">
         <h1 className="text-4xl font-bold">
-          Prop Drilling Tutorial{" "}
+          Prop Drilling Tutorial
           <span className="dark:text-gray-400 text-gray-600 text-2xl">
             af Victory Okosun
           </span>
@@ -58,8 +59,39 @@ export default function Home() {
           <li>Prop drilling - Funktion</li>
           <li>Prop drilling - Data</li>
         </ul>
-        <p>Vælg en anden branch for at se mere</p>
-        <div></div>
+        <h2 className="font-bold">Referencer og ressourcer?</h2>
+        <ul className="list-disc p-4">
+          <li className="hover:text-purple-500">
+            <Link href="https://react.dev/learn/passing-props-to-a-component">
+              React Doc - Passing Props to a Component
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://react.dev/learn/passing-data-deeply-with-context">
+              React Doc - Passing Data Deeply with Context
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://react.dev/learn/thinking-in-react">
+              React Doc - Thinking in React
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://nextjs.org/learn/react-foundations/displaying-data-with-props">
+              Next.js Doc - Displaying Data with Props
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://nextjs.org/docs/app/api-reference/file-conventions/page#props">
+              Next.js Doc - Props
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://www.w3schools.com/react/react_props.asp">
+              W3Schools - React Props
+            </Link>
+          </li>
+        </ul>
       </div>
     </>
   );
