@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+import Nav from "@/app/components/Nav";
 
 export default function Home() {
   return (
     <>
+      <Nav />
       <div className="flex flex-col gap-4 font-sans dark:bg-gray-700 p-4 bg-gray-100 dark:text-gray-200 text-gray-800">
         <h1 className="text-4xl font-bold">
           Prop Drilling Tutorial{" "}
@@ -54,12 +57,49 @@ export default function Home() {
           drilling i tre forskellige branches:
         </p>
         <ul className="list-disc p-4">
-          <li>Props og prop drilling - Grundlæggende</li>
-          <li>Prop drilling - Funktion</li>
-          <li>Prop drilling - Data</li>
+          <li className="hover:text-pink-500">
+            <Link href="/basic">Props og prop drilling - Grundlæggende</Link>
+          </li>
+          <li className="hover:text-pink-500">
+            <Link href="">Prop drilling - Funktion</Link>
+          </li>
+          <li className="hover:text-pink-500">
+            <Link href="">Prop drilling - Data</Link>
+          </li>
         </ul>
-        <p>Vælg en anden branch for at se mere</p>
-        <div></div>
+        <h1 className="text-3xl font-bold">Referencer og ressourcer</h1>
+        <ul className="list-disc p-4">
+          <li className="hover:text-purple-500">
+            <Link href="https://react.dev/learn/passing-props-to-a-component">
+              React Doc - Passing Props to a Component
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://react.dev/learn/passing-data-deeply-with-context">
+              React Doc - Passing Data Deeply with Context
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://react.dev/learn/thinking-in-react">
+              React Doc - Thinking in React
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://nextjs.org/learn/react-foundations/displaying-data-with-props">
+              Next.js Doc - Displaying Data with Props
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://nextjs.org/docs/app/api-reference/file-conventions/page#props">
+              Next.js Doc - Props
+            </Link>
+          </li>
+          <li className="hover:text-purple-500">
+            <Link href="https://www.w3schools.com/react/react_props.asp">
+              W3Schools - React Props
+            </Link>
+          </li>
+        </ul>
       </div>
     </>
   );
